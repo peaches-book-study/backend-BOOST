@@ -12,9 +12,9 @@ assignees: youngkimi
 ### Assignee : youngkimi
 
 --- ---
-# 🍑 Sub-Topic 1.
+# 🍑 Sub-Topic 1. 조현수의 어쩌구
 
-# 🍑 Sub-Topic 2. 
+# 🍑 Sub-Topic 2. 조현수의 저쩌구
 
 # 🍑 결론
 
