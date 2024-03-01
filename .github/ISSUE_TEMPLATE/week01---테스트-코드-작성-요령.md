@@ -2,7 +2,7 @@
 name: Week01 - 테스트 코드 작성 요령
 about: Describe this issue template's purpose here.
 title: Week01 - 테스트 코드 작성 요령
-labels: Week 01
+labels: ''
 assignees: youngkimi
 
 ---
@@ -12,9 +12,9 @@ assignees: youngkimi
 ### Assignee : youngkimi
 
 --- ---
-# 🍑 서론
+# 🍑 Sub-Topic 1. 
 
-# 🍑 본론
+# 🍑 Sub-Topic 2. 
 
 # 🍑 결론
 
