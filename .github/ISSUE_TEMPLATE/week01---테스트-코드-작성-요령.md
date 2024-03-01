@@ -1,7 +1,7 @@
 ---
-name: 'Week01 : 테스트 코드 작성 요령'
+name: Week01 - 테스트 코드 작성 요령
 about: Describe this issue template's purpose here.
-title: ''
+title: Week01 - 테스트 코드 작성 요령
 labels: Week 01
 assignees: youngkimi
 
