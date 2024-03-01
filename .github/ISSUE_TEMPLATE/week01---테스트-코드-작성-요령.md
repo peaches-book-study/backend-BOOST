@@ -12,7 +12,7 @@ assignees: youngkimi
 ### Assignee : youngkimi
 
 --- ---
-# 🍑 Sub-Topic 1. 
+# 🍑 Sub-Topic 1.
 
 # 🍑 Sub-Topic 2. 
 
