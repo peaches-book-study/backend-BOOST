@@ -3,11 +3,16 @@ package com.example.week01_test_skeletoncode;
 import com.example.week01_test_skeletoncode.global.error.BusinessException;
 import jakarta.annotation.PostConstruct;
 import org.junit.jupiter.api.*;
+import org.mockito.Mockito;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.boot.test.mock.mockito.MockBean;
+
+import javax.xml.crypto.Data;
 
 import static org.assertj.core.api.Assertions.*;
 import static org.junit.jupiter.api.Assertions.*;
+import static org.mockito.Mockito.verify;
 
 
 @SpringBootTest
@@ -17,6 +22,8 @@ class BalanceServiceTest {
 
     @Autowired
     private Database database;
+//    @MockBean
+//    private Database mockDatabase;
 
     @Autowired
     private BalanceService balanceService;
@@ -31,14 +38,28 @@ class BalanceServiceTest {
 
     @Test
     @Order(0)
-    @DisplayName("잔액 조회")
-    void balance() throws Exception  {
+    @DisplayName("잔액 조회-1")
+    void balance_1() throws Exception  {
 
         //when
         Account account = database.balance(66L);
         //then
         assertThat(account.getBalance()).isEqualTo(10000L);
     }
+
+//    @Test
+//    @DisplayName("잔액조회-2")
+//    void balance_2() throws Exception {
+//
+//        //given
+//        Mockito.when(mockDatabase.balance(1L))
+//                .thenReturn(new Account(0L, System.currentTimeMillis(), System.nanoTime()));
+//
+//        Account account = balanceService.balance(1L);
+//        org.assertj.core.api.Assertions.assertThat(account.getBalance()).isEqualTo(0L);
+//
+//        verify(mockDatabase).balance(1L);
+//    }
 
     @Test
     @Order(1)
