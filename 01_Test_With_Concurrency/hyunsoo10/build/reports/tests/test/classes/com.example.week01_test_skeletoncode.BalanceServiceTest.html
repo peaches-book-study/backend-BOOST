@@ -23,7 +23,7 @@
 <tr>
 <td>
 <div class="infoBox" id="tests">
-<div class="counter">5</div>
+<div class="counter">1</div>
 <p>tests</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">1.248s</div>
+<div class="counter">0.749s</div>
 <p>duration</p>
 </div>
 </td>
@@ -79,33 +79,9 @@
 </tr>
 </thead>
 <tr>
-<td class="success">잔액 조회-1</td>
-<td class="success">balance_1()</td>
-<td class="success">0.003s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">잔액 입금</td>
-<td class="success">deposit()</td>
-<td class="success">0.002s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
 <td class="success">잔액 입금 - 동시 요청 1000개</td>
 <td class="success">deposit_concurrency()</td>
-<td class="success">0.126s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">잔액 출금</td>
-<td class="success">withdraw()</td>
-<td class="success">0.006s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">잔액 출금 - 실패(잔액 부족)</td>
-<td class="success">withdraw_fail()</td>
-<td class="success">1.111s</td>
+<td class="success">0.749s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -113,8 +89,8 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>23:23:10.542 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.week01_test_skeletoncode.BalanceServiceTest]: BalanceServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-23:23:10.704 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.week01_test_skeletoncode.Week01TestSkeletoncodeApplication for test class com.example.week01_test_skeletoncode.BalanceServiceTest
+<pre>00:48:20.163 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.week01_test_skeletoncode.BalanceServiceTest]: BalanceServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+00:48:20.278 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.week01_test_skeletoncode.Week01TestSkeletoncodeApplication for test class com.example.week01_test_skeletoncode.BalanceServiceTest
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -124,11 +100,11 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v3.2.3)
 
-2024-03-04T23:23:11.154+09:00  INFO 2160 --- [    Test worker] c.e.w.BalanceServiceTest                 : Starting BalanceServiceTest using Java 17.0.9 with PID 2160 (started by hyuns in C:\GIT\backend-BOOST\01_Test_With_Concurrency\hyunsoo10)
-2024-03-04T23:23:11.156+09:00  INFO 2160 --- [    Test worker] c.e.w.BalanceServiceTest                 : No active profile set, falling back to 1 default profile: &quot;default&quot;
-2024-03-04T23:23:12.231+09:00  WARN 2160 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [annotationActionEndpointMapping] is declared through a non-static factory method on that class; consider declaring it as static instead.
-2024-03-04T23:23:12.283+09:00  INFO 2160 --- [    Test worker] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
-2024-03-04T23:23:13.297+09:00  INFO 2160 --- [    Test worker] c.e.w.BalanceServiceTest                 : Started BalanceServiceTest in 2.425 seconds (process running for 3.824)
+2024-03-05T00:48:20.559+09:00  INFO 10368 --- [    Test worker] c.e.w.BalanceServiceTest                 : Starting BalanceServiceTest using Java 17.0.9 with PID 10368 (started by hyuns in C:\GIT\backend-BOOST\01_Test_With_Concurrency\hyunsoo10)
+2024-03-05T00:48:20.560+09:00  INFO 10368 --- [    Test worker] c.e.w.BalanceServiceTest                 : No active profile set, falling back to 1 default profile: &quot;default&quot;
+2024-03-05T00:48:21.263+09:00  WARN 10368 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [annotationActionEndpointMapping] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-03-05T00:48:21.289+09:00  INFO 10368 --- [    Test worker] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-03-05T00:48:22.068+09:00  INFO 10368 --- [    Test worker] c.e.w.BalanceServiceTest                 : Started BalanceServiceTest in 1.685 seconds (process running for 2.575)
 </pre>
 </span>
 </div>
@@ -140,7 +116,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 8.5</a> at 2024. 3. 4. 오후 11:23:14</p>
+<a href="http://www.gradle.org">Gradle 8.5</a> at 2024. 3. 5. 오전 12:48:22</p>
 </div>
 </div>
 </body>
