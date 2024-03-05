@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="출금 테스트" tests="2" skipped="0" failures="0" errors="0" timestamp="2024-03-05T01:06:05" hostname="Seungheonui-MacBookPro.local" time="0.006">
+  <properties/>
+  <testcase name="출금 성공" classname="com.example.week01_test_skeletoncode.BalanceServiceTest$withdraw" time="0.002"/>
+  <testcase name="출금 실패, 잔액 부족" classname="com.example.week01_test_skeletoncode.BalanceServiceTest$withdraw" time="0.003"/>
+  <system-out><![CDATA[2024-03-05T10:06:05.027+09:00  INFO 9682 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.example.week01_test_skeletoncode.BalanceServiceTest$withdraw]: withdraw does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-03-05T10:06:05.028+09:00  INFO 9682 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.example.week01_test_skeletoncode.Week01TestSkeletoncodeApplication for test class com.example.week01_test_skeletoncode.BalanceServiceTest$withdraw
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
