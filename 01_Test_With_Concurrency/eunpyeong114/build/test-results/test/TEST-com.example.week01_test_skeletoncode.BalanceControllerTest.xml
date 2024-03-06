@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.week01_test_skeletoncode.BalanceControllerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-03-05T23:40:50" hostname="jeon-eunpyeong-ui-MacBookPro.local" time="0.406">
+  <properties/>
+  <testcase name="동시성 입금 테스트" classname="com.example.week01_test_skeletoncode.BalanceControllerTest" time="0.406"/>
+  <system-out><![CDATA[08:40:49.968 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.week01_test_skeletoncode.BalanceControllerTest]: BalanceControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+08:40:50.017 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.week01_test_skeletoncode.Week01TestSkeletoncodeApplication for test class com.example.week01_test_skeletoncode.BalanceControllerTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.3)
+
+2024-03-06T08:40:50.184+09:00  INFO 8151 --- [    Test worker] c.e.w.BalanceControllerTest              : Starting BalanceControllerTest using Java 21.0.2 with PID 8151 (started by jeon-eunpyeong in /Users/jeon-eunpyeong/Desktop/backend-BOOST/01_Test_With_Concurrency/eunpyeong114)
+2024-03-06T08:40:50.184+09:00  INFO 8151 --- [    Test worker] c.e.w.BalanceControllerTest              : No active profile set, falling back to 1 default profile: "default"
+2024-03-06T08:40:50.538+09:00  WARN 8151 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [annotationActionEndpointMapping] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-03-06T08:40:50.556+09:00  INFO 8151 --- [    Test worker] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-03-06T08:40:50.860+09:00  INFO 8151 --- [    Test worker] c.e.w.BalanceControllerTest              : Started BalanceControllerTest in 0.788 seconds (process running for 1.273)
+]]></system-out>
+  <system-err><![CDATA[WARNING: A Java agent has been loaded dynamically (/Users/jeon-eunpyeong/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy-agent/1.14.12/be4984cb6fd1ef1d11f218a648889dfda44b8a15/byte-buddy-agent-1.14.12.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+]]></system-err>
+</testsuite>
