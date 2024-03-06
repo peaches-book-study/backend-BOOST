@@ -3,7 +3,10 @@ package com.example.week01_test_skeletoncode;
 import com.example.week01_test_skeletoncode.global.error.BusinessException;
 import jakarta.annotation.PostConstruct;
 import org.junit.jupiter.api.*;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.Mock;
 import org.mockito.Mockito;
+import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
@@ -16,14 +19,15 @@ import static org.mockito.Mockito.verify;
 
 
 @SpringBootTest
+@ExtendWith(MockitoExtension.class)
 class BalanceServiceTest {
 
     private Account account;
 
     @Autowired
     private Database database;
-//    @MockBean
-//    private Database mockDatabase;
+    @Mock
+    private Database mockDatabase;
 
     @Autowired
     private BalanceService balanceService;
