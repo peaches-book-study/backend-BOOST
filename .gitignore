@@ -5,6 +5,9 @@
 # Compiled class file
 *.class
 
+# Intelij
+.idea
+
 # BlueJ files
 *.ctxt
 
