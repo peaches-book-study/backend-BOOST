@@ -69,3 +69,39 @@ def request(user: str) :
     redis_client.hset(key, 'timestamp', now)
     print('RESET TIMESTAMP')
     return True
+
+@app.get("/request-by-ip/{ip_address}")
+def request(ip_address: str):
+    interval = 5;
+    limit = 5;
+    endpoint='request-by-ip'
+    key = f'ratelimit:{endpoint}'
+    now = time.time()
+    p = redis_client.pipeline()
+    # count를 사용하는 것이 아니라, 요청의 개수를 센다. (정렬 구조 사용. zadd)
+    p.zadd(key, {ip_address: now})
+    # 일정 시간(interval)이 지난 요청은 제거. 
+    p.zremrangebyscore(key, 0, now - interval)
+    p.expire(key, interval)
+    count = p.zcard(key)
+    if count > limit:
+        return False
+    return True
+
+@app.get("/request-by-token/{user}")
+def request(user: str):
+    interval = 5;
+    limit = 5;
+    endpoint='request-by-token'
+    key = f'ratelimit:{endpoint}'
+    now = time.time()
+    p = redis_client.pipeline()
+    # count를 사용하는 것이 아니라, 요청의 개수를 센다. (정렬 구조 사용. zadd)
+    p.zadd(key, {user: now})
+    # 일정 시간(interval)이 지난 요청은 제거. 
+    p.zremrangebyscore(key, 0, now - interval)
+    p.expire(key, interval)
+    count = p.zcard(key)
+    if count > limit:
+        return False
+    return True
