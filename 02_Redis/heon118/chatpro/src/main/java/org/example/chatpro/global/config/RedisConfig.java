@@ -1,7 +1,9 @@
 package org.example.chatpro.global.config;
 
+import lombok.RequiredArgsConstructor;
 import org.example.chatpro.domain.model.SubscriberService;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.data.redis.connection.RedisConnectionFactory;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.listener.ChannelTopic;
@@ -10,6 +12,8 @@ import org.springframework.data.redis.listener.adapter.MessageListenerAdapter;
 import org.springframework.data.redis.serializer.Jackson2JsonRedisSerializer;
 import org.springframework.data.redis.serializer.StringRedisSerializer;
 
+@Configuration
+@RequiredArgsConstructor
 public class RedisConfig {
     // 단일 Topic 사용을 위한 Bean 설정
     @Bean

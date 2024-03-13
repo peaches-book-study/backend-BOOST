@@ -4,8 +4,10 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.RequiredArgsConstructor;
 import org.springframework.messaging.simp.SimpMessageSendingOperations;
 import org.springframework.stereotype.Service;
+import org.springframework.web.socket.config.annotation.EnableWebSocketMessageBroker;
 
 @RequiredArgsConstructor
+@EnableWebSocketMessageBroker
 @Service
 public class SubscriberService {
     private final ObjectMapper objectMapper;
