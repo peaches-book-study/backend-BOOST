@@ -1,7 +1,4 @@
 spring:
-  profiles:
-    active: local # plus
-
   devtools:
     livereload:
       enabled: true
@@ -12,3 +9,8 @@ spring:
     cache: false
     template-loader-path: classpath:/templates
     suffix: .ftl
+
+  data:
+    redis:
+      host: localhost
+      port: 6379

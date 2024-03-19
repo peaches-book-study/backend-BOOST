@@ -33,6 +33,12 @@ dependencies {
 	// web socket
 	implementation 'org.springframework.boot:spring-boot-starter-websocket'
 
+	// freemarker
+	implementation 'org.springframework.boot:spring-boot-starter-freemarker'
+
+	// json
+	implementation 'com.google.code.gson:gson:2.8.0'
+
 	// socket client
 	implementation 'org.webjars.bower:bootstrap:4.3.1'
 	implementation 'org.webjars.bower:vue:2.5.16'
