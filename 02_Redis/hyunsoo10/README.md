@@ -44,7 +44,18 @@ Sessin Clustering이란, 여러 WAS의 Session이 모두 공유되도록 하는 
 - Jedis의 경우 멀티 쓰레드 환경에서 Thread-safe를 보장하지 않는다.
 - Lettuce는 netty 기반으로 멀티 쓰레드 환경에서 강태를 가지고 공유할 수 있다. 따라서 멑티쓰레드 환경에서 Lettuce와 상호작용을 할때 여러 쓰레드에서 각각 독립적인 커넥션을 만들 필요가 없다.
 
-# 🍑 Sub-Topic 3. Redis Session 테스트
+# 🍑 Sub-Topic 3. Redis Session 테스트 가이드
+
+#### ❗사전 준비 사항
+- 8080, 8081, 6379 포트를 사용할 수 있도록 비워두기
+- docker compose 실행 환경
+
+1. 프로제트 루트 디렉토리에 위치한 docker-compose.yml 파일을 실행
+```
+docker compose up -d
+```
+2. Postman or TalandAPI 등 API 테스터를 통해 유저 로그인
+
 
 
 
