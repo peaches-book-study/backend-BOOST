@@ -1,7 +1,7 @@
 ---
 name: Week04 - 네트워크 질문지 (heon118)
-about: Describe this issue template's purpose here.
-title: ''
+about: Week04 - 네트워크 질문지 (heon118)
+title: Week04 - 네트워크 질문지 (heon118)
 labels: ''
 assignees: heon118, youngkimi
 
