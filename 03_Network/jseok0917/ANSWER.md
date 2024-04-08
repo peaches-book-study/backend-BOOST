@@ -93,7 +93,7 @@
 <br>캐시에 정보가 없는 경우, DNS Resolver는 루트 DNS 서버에서 최상위 도메인(TLD) DNS 서버의 IP 주소 정보를 알아냅니다.
 
 - DNS Resolver는 최상위 도메인(TLD) DNS 서버에 연결하여 권한 네임 서버(Authoritative Name Server)의 IP 주소를 요청하여 받아냅니다.
-- 최종적으로 DNS Resolver는 권한 네임 서버에서 도메인의 최종 IP 주소를 마침내 알아냅니다. 
+- 최종적으로 DNS Resolver는 권한 네임 서버에서 도메인의 최종 IP 주소를 알아냅니다. 
 <br>이렇게 받아 온 IP 주소는 로컬 DNS 캐시에 저장됩니다. 이후로는 같은 요청이 있다면 DNS Resolver에서 바로 응답이 가능합니다.
 
 - 받아온 최종 IP 주소를 다시 거꾸로 운영체제를 거쳐 브라우저로 전달합니다. 
