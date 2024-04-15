@@ -495,9 +495,10 @@ fetch('https://bank.example.com/transfer', {
 
 20. JWT 토큰에 대해 설명해주세요. ⭐️
 
-JWT(JSON Web Token) : 웹 표준으로서 두 개체 간에 JSON 객체를 안전하게 전송하기 위한 간결하고 독립적인 방법을 제공하는 인증 토큰
+- JWT(JSON Web Token) : 웹 표준으로서 두 개체 간에 JSON 객체를 안전하게 전송하기 위한 간결하고 독립적인 방법을 제공하는 인증 토큰
     - JWT는 클라이언트와 서버 간의 인증을 위해 사용되며, 토큰 안에는 클라이언트에 대한 정보와 해당 토큰의 유효성을 검증하기 위한 서명이 포함
     - JWT는 자가 수용적(self-contained)이기 때문에 서버의 데이터베이스에 토큰을 저장할 필요가 없으며, 분산 환경에서 효율적으로 작동
+
 ---
 
 21. Connection timeout 과 Read timeout의 차이에 대해 설명해주세요. ⭐️⭐️
